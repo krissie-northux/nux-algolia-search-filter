@@ -13,8 +13,6 @@ composer.lock
 /composer.lock
 package-lock.json
 /package-lock.json
-vendor/
-/vendor/
 .parcel-cache
 /.parcel-cache
 
