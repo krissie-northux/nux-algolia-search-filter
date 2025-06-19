@@ -1,0 +1,32 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/algolia-filter",
+	"version": "0.1.0",
+	"title": "Algolia Filter",
+	"category": "widgets",
+	"icon": "filter",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"ancestor": ["create-block/algolia-blocks"],
+	"attributes": {
+		"filterType": {
+			"type": "string",
+			"default": "menu",
+			"enum": [ "refinementList", "menuSelect", "menu" ]
+		},
+		"filterTarget": {
+			"type": "string",
+			"default": ""
+		}
+    },
+	"supports": {
+		"html": false
+	},
+	"usesContext": ["create-block/algolia-filter"],
+	"textdomain": "algolia-filter",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

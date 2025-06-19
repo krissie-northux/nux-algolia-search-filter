@@ -1,0 +1,31 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-algolia-blocks {
+
+}
+.ais-InfiniteHits-list, .ais-Hits-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap:25px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+.ais-Hits-list {
+    gap:20px;
+}
+.ais-InfiniteHits-item, .ais-Hits-item {
+    width: 100%;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        width: calc(33% - 15px);
+    }
+}

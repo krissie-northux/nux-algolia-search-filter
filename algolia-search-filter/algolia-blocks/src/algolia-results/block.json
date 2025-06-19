@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/algolia-results",
+	"version": "0.1.0",
+	"title": "Algolia Results",
+	"category": "widgets",
+	"icon": "filter",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"ancestor": ["create-block/algolia-blocks"],
+	"supports": {
+		"html": false
+	},
+	"textdomain": "algolia-results",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

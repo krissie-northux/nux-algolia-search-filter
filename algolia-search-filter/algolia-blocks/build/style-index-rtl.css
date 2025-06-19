@@ -1,0 +1,1 @@
+.ais-Hits-list,.ais-InfiniteHits-list{-moz-column-gap:25px;column-gap:25px;display:flex;flex-wrap:wrap;justify-content:flex-start;list-style:none;margin:0;padding:0}.ais-Hits-list{gap:20px}.ais-Hits-item,.ais-InfiniteHits-item{margin-bottom:20px;width:100%}@media screen and (min-width:768px){.ais-Hits-item,.ais-InfiniteHits-item{width:calc(33% - 15px)}}

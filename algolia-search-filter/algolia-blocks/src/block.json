@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/algolia-blocks",
+	"version": "0.1.0",
+	"title": "Algolia Filters",
+	"category": "widgets",
+	"icon": "filter",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"attributes": {
+		"pagination": {
+			"type": "string",
+			"default": "loadMore"
+		},
+		"hitsPerPage": {
+			"type": "string",
+			"default": 12
+		},
+        "selectedPostType": {
+            "type": "string",
+            "default": "videos"
+        }
+    },
+	"providesContext": {
+        "create-block/algolia-filter": "selectedPostType"
+    },
+	"supports": {
+		"html": false
+	},
+	"textdomain": "algolia-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
