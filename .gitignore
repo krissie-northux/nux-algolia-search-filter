@@ -5,3 +5,18 @@
 *.bak
 *.swp
 Thumbs.db
+
+# Ignore dependencies
+node_modules/
+composer.lock
+package-lock.json
+vendor/
+
+
+# dotenv environment variables file
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
