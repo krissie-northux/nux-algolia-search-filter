@@ -1,14 +1,5 @@
 <?php
 /**
- * Plugin Name:       Algolia Blocks
- * Description:       Example block scaffolded with Create Block tool.
- * Requires at least: 6.6
- * Requires PHP:      7.2
- * Version:           0.1.0
- * Author:            The WordPress Contributors
- * License:           GPL-2.0-or-later
- * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       algolia-blocks
  *
  * @package CreateBlock
  */
@@ -94,18 +85,6 @@ function create_block_algolia_blocks_block_init() {
 		'taxonomies' => $taxonomies_options,
 		'postTypes' => $post_types_options
     ));
-
-	
-
-/*
-	$algolia_app_id = get_option('algolia_app_id');
-	$algolia_api_key = get_option('algolia_api_key');
-	$index_prefix = get_option('index_prefix');
-	wp_localize_script('create-block-algolia-blocks-view-script', 'algoliaSearchData', array(
-		'app_id' => $algolia_app_id,
-		'api_key' => $algolia_api_key,
-		'index_prefix' => $index_prefix
-	));*/
 }
 add_action( 'init', 'create_block_algolia_blocks_block_init' );
 
@@ -134,18 +113,3 @@ function enqueue_my_awesome_script_if_there_is_block($content = ""){
 	 
    return $content;
 }
-
-function my_enqueue_block_editor_assets() {
-    wp_enqueue_script('algolia-search','https://cdn.jsdelivr.net/npm/algoliasearch@4.10.5/dist/algoliasearch-lite.umd.js',array(),'4.10.5',true);
-		wp_enqueue_script('algolia-instantsearch','https://cdn.jsdelivr.net/npm/instantsearch.js@4.75.5',array('algolia-search'),'4.75.5',true);
-		wp_enqueue_script('algolia-block-js', ALGOLIASF_CORE_URL .'algolia-blocks/instantsearch-app/src/app.js',array('algolia-search', 'algolia-instantsearch'),'1.0.0',true);
-		$algolia_app_id = get_option('algolia_app_id');
-		$algolia_api_key = get_option('algolia_api_key');
-		$index_prefix = get_option('index_prefix');
-		wp_localize_script('algolia-block-js', 'algoliaSearchData', array(
-			'app_id' => $algolia_app_id,
-			'api_key' => $algolia_api_key,
-			'index_prefix' => $index_prefix
-		));
-}
-//add_action( 'enqueue_block_editor_assets', 'my_enqueue_block_editor_assets' );

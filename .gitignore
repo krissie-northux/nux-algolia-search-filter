@@ -8,9 +8,15 @@ Thumbs.db
 
 # Ignore dependencies
 node_modules/
+/node_modules/
 composer.lock
+/composer.lock
 package-lock.json
+/package-lock.json
 vendor/
+/vendor/
+.parcel-cache
+/.parcel-cache
 
 
 # dotenv environment variables file
